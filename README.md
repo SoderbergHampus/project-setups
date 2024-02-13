@@ -8,11 +8,10 @@ in the corresponding directories.
 
 So far implemented languages are:
 
-- Nothing
+- JavaScript
 
 ## To-do
 
-- JavaScript
 - TypeScript
 - Python
 - Spring Boot (Java)
