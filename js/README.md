@@ -44,10 +44,10 @@ Make sure you have test, start and lint commands set-up in the package.json:
 
 ```bash
 "scripts": {
-   "test": "jest",
-   "start": "node index.js",
-   "lint": "eslint *.js"
- },
+	"test": "jest",
+	"start": "node ./src/index.js",
+	"lint": "eslint './src/**/*.js'"
+},
 ```
 
 ## Jest
@@ -91,3 +91,7 @@ Create '.babelrc'-file and fill with content:
 	}
 }
 ```
+
+## .gitignore
+
+Make sure to add 'node_modules/' to '.gitignore'
