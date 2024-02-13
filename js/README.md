@@ -1,5 +1,7 @@
 # Setting up a JavaScript project
 
+At this time, this guide is only test for running in node and not browser.
+
 ## Initialize project
 
 Use the command below to initialize project:
