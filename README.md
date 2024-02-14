@@ -9,9 +9,9 @@ in the corresponding directories.
 So far implemented languages are:
 
 - JavaScript
+- TypeScript
 
 ## To-do
 
-- TypeScript
 - Python
 - Spring Boot (Java)
