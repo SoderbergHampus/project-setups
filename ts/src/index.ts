@@ -1,5 +1,5 @@
 export const myFunction = (): string => {
-  return 'Hello World';
+	return 'Hello World';
 };
 
 console.log(myFunction());

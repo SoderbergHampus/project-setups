@@ -37,14 +37,6 @@ npm install @tsconfig/recommended --save-dev
 
 ### Step 5.
 
-Make sure building it works:
-
-```bash
-npx tsc
-```
-
-### Step 6.
-
 Add scripts to package.json:
 
 ```bash
@@ -86,11 +78,11 @@ I.e path becomes '/src/\_\_tests\_\_', which can run with just "npm run jest".
 
 ### Step 1.
 
-(Note. I add google eslint rules as well, very much optional)
-Install dependancies needed:
+Install eslint and needed dependancies, also config for ignoring the rules that
+prettier covers:
 
 ```bash
-npm install --save-dev eslint typescript typescript-eslint eslint-config-google
+npm install --save-dev eslint typescript typescript-eslint eslint-config-prettier
 ```
 
 ### Step 2.
@@ -105,10 +97,38 @@ Create '.eslintrc' file and fill it with:
   "extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
-		"google"
+		"prettier"
 	],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "root": true
 }
+```
+
+## Prettier
+
+Create rc file for prettier:
+
+```bash
+touch .prettierrc
+```
+
+Prettier will use defaults for rules that aren't set in file, I presonally like overriding a couple of them:
+
+```bash
+{
+  "useTabs": true,
+  "tabWidth": 2,
+  "singleQuote": true
+}
+```
+
+## Git
+
+Create '.gitignore'-file and fill with:
+
+```bash
+node_modules/
+dist/
+.idea/
 ```
